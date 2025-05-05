@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCloud</title>
+    <style>
+      :root {
+        --theme-color-system: white;
+        --theme-accent: rgb(65, 143, 231);
+        --bg-dark: rgb(28, 28, 30);
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--bg-dark);
+        color: var(--theme-color-system);
+        font-family: system-ui, Helvetica Neue, sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: rgba(28, 28, 30, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 16px 32px; /* 左右邊距變寬 */
+      }
+
+      header svg path {
+        fill: var(--theme-color-system);
+      }
+
+      .header-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--theme-color-system);
+        margin-left: 12px;
+      }
+
+      .icloud-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .h1-title {
+        font-size: 140px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .page-container {
+        max-width: 1200px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sign-in-btn {
+        background-color: white;
+        color: black;
+        border: none;
+        font-weight: 600;
+        padding: 10px 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 146px;
+        height: 44px;
+        transition: background-color 0.3s;
+      }
+
+      .sign-in-btn:hover {
+        background-color: #ddd;
+      }
+
+      .h2-title {
+        font-size: 40px;
+        width: 50%;
+        margin-top: 50px;
+      }
+
+      .page-title-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .page-title {
+        background-color: rgba(28, 28, 30, 0.8);
+        border-radius: 15px;
+        padding: 24px;
+        box-shadow: 0 11px 34px rgba(0, 0, 0, 0.65);
+        width: 340px;
+        text-align: left;
+      }
+
+      .page-title img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+
+      .page-title h2 {
+        font-size: 28px;
+        font-weight: 600;
+        height: 100px;
+      }
+
+      .page-title p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.6;
+        height: 100px;
+      }
+
+      a {
+        color: var(--theme-accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 80px;
+        padding: 30px 20px;
+        background-color: #1c1c1e;
+        color: #9e9e9f;
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.8;
+        border-top: 1px solid #3a3a3c;
+      }
+
+      footer a {
+        color: #9e9e9f;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <svg
+        width="30"
+        height="30"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 14 17"
+      >
+        <path
+          d="M8.856 3.158C9.35 2.56 9.7 1.745 9.7.92c0-.114-.01-.227-.03-.32-.805.03-1.774.536-2.351 1.217-.454.516-.877 1.341-.877 2.167 0 .123.02.247.031.288.052.01.134.021.217.021.721 0 1.629-.485 2.165-1.135Zm.567 1.31c-1.207 0-2.186.733-2.815.733-.67 0-1.546-.691-2.598-.691C2.02 4.51 0 6.16 0 9.265c0 1.94.742 3.982 1.67 5.303.794 1.114 1.485 2.032 2.485 2.032.99 0 1.422-.66 2.65-.66 1.247 0 1.525.64 2.618.64 1.082 0 1.804-.991 2.484-1.971.763-1.124 1.083-2.218 1.093-2.27-.062-.02-2.134-.866-2.134-3.239 0-2.053 1.629-2.97 1.722-3.043-1.073-1.547-2.712-1.589-3.165-1.589Z"
+        />
+      </svg>
+      <span class="header-title">iCloud</span>
+    </header>
+
+    <div class="icloud-content">
+      <img
+        src="iCloud_img/0e4e931e06552e87f2fdff2832e11bb9.png"
+        alt="iCloud Logo"
+      />
+      <h1 class="h1-title">iCloud</h1>
+      <div class="page-container">
+        <button type="button" class="sign-in-btn">Sign In</button>
+        <h2 class="h2-title">
+          The best place for all your photos, files, notes, mail, and more.
+        </h2>
+
+        <div class="page-title-container">
+          <div class="page-title">
+            <img
+              src="iCloud_img/5f2eb96708c817d4da8f26e75916a38f.png"
+              alt="iPhone Web Access"
+            />
+            <h2>Easily access apps and data from your iPhone on the web</h2>
+            <p>
+              iCloud is essential for keeping personal information from your
+              devices safe and available anywhere. Any changes sync across
+              devices.
+            </p>
+          </div>
+
+          <div class="page-title">
+            <img
+              src="iCloud_img/7cb9ecdad2b384754de394732519f658.png"
+              alt="iCloud+"
+            />
+            <h2>More storage and privacy features with iCloud+</h2>
+            <p>
+              Upgrade to iCloud+ to get more storage, privacy tools like Private
+              Relay and Hide My Email. Learn more at <br />
+              <a href="https://apple.com/icloud" target="_blank"
+                >apple.com/icloud</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        background-color: rgb(39, 39, 41);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+      "
+    >
+      <div>
+        <a href="https://www.apple.com/support/systemstatus/" target="_blank"
+          >System Status</a
+        >
+        |
+        <a href="https://www.apple.com/legal/privacy/" target="_blank"
+          >Privacy Policy</a
+        >
+        |
+        <a
+          href="https://www.apple.com/legal/internet-services/icloud/"
+          target="_blank"
+          >Terms & Conditions</a
+        >
+      </div>
+      <div>Copyright © 2025 Apple Inc. All rights reserved.</div>
+    </div>
+  </body>
+</html>
