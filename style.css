@@ -1,0 +1,252 @@
+:root {
+    --theme-color-system: white;
+    --theme-accent: rgb(65, 143, 231);
+    --bg-dark: rgb(28, 28, 30);
+    }
+    body {
+    margin: 0;
+    background-color: var(--bg-dark);
+    color: var(--theme-color-system);
+    font-family: system-ui, Helvetica Neue, sans-serif;
+    }
+
+    header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(28, 28, 30, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 16px;
+    }
+
+    header svg path {
+    fill: var(--theme-color-system);
+    }
+
+    .header-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--theme-color-system);
+    margin-left: 12px;
+    }
+
+    .icloud-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    }
+
+    .h1-title {
+    font-size: 140px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+
+    .page-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .sign-in-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 146px;
+    height: 44px;
+    transition: background-color 0.3s;
+    }
+
+    .sign-in-btn:hover {
+    background-color: #ddd;
+    }
+
+    .h2-title {
+    font-size: 40px;
+    width: 50%;
+    margin-top: 50px;
+    }
+
+    .page-title-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    }
+
+    .page-title {
+    background-color: rgba(28, 28, 30, 0.8);
+    border-radius: 11px;
+    padding: 40px;
+    box-shadow: 0 11px 34px rgba(0, 0, 0, 0.65);
+    text-align: left;
+    width: 650px;
+    box-sizing: border-box;
+    }
+
+    .page-title img {
+    width: 400px;
+    height: 250px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: none;
+    }
+
+    .page-title h2 {
+    font-size: 28px;
+    font-weight: 600;
+    height: 100px;
+    }
+
+    .page-title p {
+    font-size: 17px;
+    font-weight: 400;
+    height: 100px;
+    }
+
+    a {
+    color: var(--theme-accent);
+    text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline;
+    }
+
+    .footer {
+    background-color: rgb(39, 39, 41);
+    color: #9e9e9f;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    border-top: 1px solid #3a3a3c;
+    }
+
+    .footer a {
+    color: #9e9e9f;
+    margin: 0 10px;
+    text-decoration: none;
+    }
+
+    .footer a:hover {
+    text-decoration: underline;
+    }
+
+    .footer div {
+    margin: 5px 0;
+    }
+
+    .login-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .login-content a {
+    box-sizing: border-box;
+    color: rgb(41, 151, 255);
+    cursor: pointer;
+    flex-direction: column;
+    font-size: 14px;
+    }
+
+    .widget svg {
+    width: 160px;
+    height: 160px;
+    height: auto;
+    }
+
+    .widget {
+    background-color: rgba(28, 28, 30, 0.8);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 11px 34px rgba(0, 0, 0, 0.65);
+    text-align: center;
+    width: 650px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 50px 0px 50px 0px;
+    }
+
+    .widget input {
+    color: white;
+    width: 480px;
+    height: 55px;
+    padding: 0px 15px;
+    border-radius: 12px;
+    border: 2px solid rgb(99, 99, 104);
+    background-color: rgb(35, 35, 37);
+    font-size: 16px;
+    margin-bottom: 20px;
+    }
+
+    .widget input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    .widget form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+
+    .send {
+        background-color: #0071e3;
+        color: white;              
+        border: none; 
+        padding: 10px 20px;        
+        text-align: center;        
+        font-size: 16px;      
+        font-weight: bold;       
+        cursor: pointer;         
+        border-radius: 50px;      
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .send:hover {
+        background-color: #005bb5; ;    
+    }
+    
+    /* 手機版 RWD */
+    @media (max-width: 600px) {
+    .h1-title {
+        font-size: 72px;
+    }
+
+    .h2-title {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    }
