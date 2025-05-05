@@ -27,7 +27,7 @@
         background-color: rgba(28, 28, 30, 0.8);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        padding: 16px 32px; /* 左右邊距變寬 */
+        padding: 16px 32px;
       }
 
       header svg path {
@@ -48,6 +48,7 @@
         padding: 40px 20px;
         text-align: center;
       }
+
       .h1-title {
         font-size: 140px;
         font-weight: 600;
@@ -133,25 +134,47 @@
         text-decoration: underline;
       }
 
-      footer {
-        margin-top: 80px;
-        padding: 30px 20px;
-        background-color: #1c1c1e;
+      .footer {
+        background-color: rgb(39, 39, 41);
         color: #9e9e9f;
         font-size: 13px;
-        text-align: center;
-        line-height: 1.8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px 20px;
         border-top: 1px solid #3a3a3c;
       }
 
-      footer a {
+      .footer a {
         color: #9e9e9f;
         margin: 0 10px;
         text-decoration: none;
       }
 
-      footer a:hover {
+      .footer a:hover {
         text-decoration: underline;
+      }
+
+      .footer div {
+        margin: 5px 0;
+      }
+
+      /* 手機版 RWD */
+      @media (max-width: 600px) {
+        .h1-title {
+          font-size: 72px;
+        }
+
+        .h2-title {
+          font-size: 24px;
+          width: 90%;
+        }
+
+        .footer {
+          flex-direction: column;
+          text-align: center;
+        }
       }
     </style>
   </head>
@@ -176,6 +199,7 @@
         alt="iCloud Logo"
       />
       <h1 class="h1-title">iCloud</h1>
+
       <div class="page-container">
         <button type="button" class="sign-in-btn">Sign In</button>
         <h2 class="h2-title">
@@ -213,15 +237,8 @@
         </div>
       </div>
     </div>
-    <div
-      style="
-        background-color: rgb(39, 39, 41);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px;
-      "
-    >
+
+    <div class="footer">
       <div>
         <a href="https://www.apple.com/support/systemstatus/" target="_blank"
           >System Status</a
