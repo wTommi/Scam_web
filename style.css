@@ -227,19 +227,3 @@ a:hover {
 .send:hover {
     background-color: #005bb5; ;    
 }
-    
-@media (max-width: 600px) {
-    .h1-title {
-        font-size: 72px;
-    }
-
-    .h2-title {
-        font-size: 24px;
-        width: 90%;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
